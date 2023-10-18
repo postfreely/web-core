@@ -1,4 +1,4 @@
-module github.com/writeas/web-core
+module github.com/postfreely/web-core
 
 go 1.10
 
