@@ -16,6 +16,7 @@ type AttachmentType string
 
 const (
 	AttachImage    AttachmentType = "Image"
+	AttachVideo    AttachmentType = "Video"
 	AttachDocument AttachmentType = "Document"
 )
 
@@ -24,6 +25,13 @@ const (
 // extension.
 func NewImageAttachment(url string) Attachment {
 	return newAttachment(url, AttachImage)
+}
+
+// NewVideoAttachment creates a new Attachment from the given URL, setting the
+// correct type and automatically detecting the MediaType based on the file
+// extension.
+func NewVideoAttachment(url string) Attachment {
+	return newAttachment(url, AttachVideo)
 }
 
 // NewDocumentAttachment creates a new Attachment from the given URL, setting the
