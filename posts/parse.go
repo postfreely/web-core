@@ -4,7 +4,7 @@ import (
 	"fmt"
 	stripmd "github.com/writeas/go-strip-markdown/v2"
 	"github.com/writeas/slug"
-	"github.com/writeas/web-core/stringmanip"
+	"github.com/postfreely/web-core/stringmanip"
 	"regexp"
 	"strings"
 	"unicode"

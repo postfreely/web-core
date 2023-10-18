@@ -2,7 +2,7 @@ package auth
 
 import (
 	uuid "github.com/gofrs/uuid"
-	"github.com/writeas/web-core/log"
+	"github.com/postfreely/web-core/log"
 	"strings"
 )
 
